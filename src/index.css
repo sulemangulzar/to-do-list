@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-checkbox .checkmark-icon {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked + .checkmark .checkmark-icon {
+  display: block;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #361b7f;
+}
+
+.custom-checkbox input:checked + .checkmark .checkmark-icon {
+  left: 8px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
