@@ -1,6 +1,11 @@
 import React from "react";
 
 const Todoitems = (props) => {
+  const [line, setLine] = React.useState(false);
+  const cutIT = () => {
+    setLine(true);
+  };
+
   return (
     <>
       <div className="w-full flex items-center gap-x-4 mt-2">
@@ -12,7 +17,13 @@ const Todoitems = (props) => {
             props.onSelect(props.id);
           }}
         ></lord-icon>
-        <li className="text-base font-medium tracking-wide">{props.items}</li>
+        <input type="checkbox" className="" onChange={cutIT} />
+        <li
+          className="text-base font-medium tracking-wide"
+          style={{ textDecoration: line ? "line-through" : "none" }}
+        >
+          {props.items}
+        </li>
       </div>
     </>
   );
