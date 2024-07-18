@@ -11,7 +11,7 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "http://<your-github-username>.github.io/<repository-name>"
+    "homepage": "http://sulemangulzar.github.io/to-do-list"
   },
   "scripts": {
     "start": "react-scripts start",
