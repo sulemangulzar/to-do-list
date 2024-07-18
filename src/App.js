@@ -24,7 +24,7 @@ const App = () => {
   return (
     <>
       <div className="flex justify-center absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
-        <div className="container max-w-[98%] md:w-[600px] h-[500px] bg-white rounded-xl p-4 ">
+        <div className="container max-w-[98%] md:w-[600px] min-h-[500px] bg-white rounded-xl p-4 ">
           <h1 className="text-center text-xl font-medium">To-Do List</h1>
           <div className="addTodo mt-4">
             <h2 className="text-base font-medium">Add a Todo:</h2>
